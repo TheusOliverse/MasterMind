@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="icon" href="./svg/light-bulb-svgrepo-com.svg">
+    <link rel="stylesheet" href="cadastro.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            top: 0;
+            left: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background: url(https://c4.wallpaperflare.com/wallpaper/997/870/378/mountains-mist-dark-snowy-mountain-summit-hd-wallpaper-preview.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        nav {
+            position: relative;
+            top: 10vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        .icon_input {
+            transition: 0.5s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        input {
+            color: white;
+            transition: 0.5s;
+            font-size: 25px;
+            width: 100%;
+            border: none;
+            box-shadow: 0 0 10px black;
+            padding: 5px;
+            border-radius: 10px;
+            background: linear-gradient(90deg, rgba(60, 227, 216, 0.527), rgba(0, 0, 0, 0));
+        }
+
+        input::placeholder {
+            transition: 0.5s;
+            color: rgba(255, 255, 255, 0.648);
+            border: none;
+        }
+
+        .formulario {
+            border-radius: 20px;
+            width: 50%;
+            height: 80%;
+            box-shadow: 0 0 15px black;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            align-items: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .but_submit {
+            cursor: pointer;
+            padding: 5px;
+            font-size: 20px;
+            color: aliceblue;
+            border: none;
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 255, 0, 0.309);
+            width: 50%;
+            display: flex;
+        }
+
+        .filter {
+            filter: drop-shadow(0 0 5px white);
+        }
+
+        .tam {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <form action="/cadastrado" class="formulario" method="POST">
+            <div style="display: flex; gap: 20px;">
+                <svg class="filter tam" fill="#ffffff" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64"
+                    xml:space="preserve">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <g>
+                            <path
+                                d="M32,42c8.673,0,16-8.701,16-19S40.673,4,32,4s-16,8.701-16,19S23.327,42,32,42z M32,8c6.505,0,12,6.869,12,15 s-5.495,15-12,15s-12-6.869-12-15S25.495,8,32,8z">
+                            </path>
+                            <path
+                                d="M4.103,45.367l-4,12c-0.203,0.61-0.101,1.28,0.275,1.802C0.753,59.691,1.357,60,2,60h60c0.643,0,1.247-0.309,1.622-0.831 c0.376-0.521,0.479-1.191,0.275-1.802l-4-12c-0.209-0.626-0.713-1.108-1.348-1.29l-14-4c-0.482-0.139-0.996-0.09-1.444,0.134 L32,45.764l-11.105-5.553c-0.448-0.224-0.962-0.272-1.444-0.134l-14,4C4.815,44.259,4.312,44.741,4.103,45.367z M19.802,44.137 l11.304,5.652c0.562,0.281,1.227,0.281,1.789,0l11.304-5.652l12.238,3.496L59.226,56H4.774l2.789-8.367L19.802,44.137z">
+                            </path>
+                            <path
+                                d="M62,6h-4V2c0-1.104-0.896-2-2-2s-2,0.896-2,2v4h-4c-1.104,0-2,0.896-2,2s0.896,2,2,2h4v4c0,1.104,0.896,2,2,2s2-0.896,2-2 v-4h4c1.104,0,2-0.896,2-2S63.104,6,62,6z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+
+                <svg class="filter" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M16.3153 16.6681C15.9247 17.0587 15.9247 17.6918 16.3153 18.0824C16.7058 18.4729 17.339 18.4729 17.7295 18.0824L22.3951 13.4168C23.1761 12.6357 23.1761 11.3694 22.3951 10.5883L17.7266 5.9199C17.3361 5.52938 16.703 5.52938 16.3124 5.91991C15.9219 6.31043 15.9219 6.9436 16.3124 7.33412L19.9785 11.0002L2 11.0002C1.44772 11.0002 1 11.4479 1 12.0002C1 12.5524 1.44772 13.0002 2 13.0002L19.9832 13.0002L16.3153 16.6681Z"
+                            fill="#ffffff"></path>
+                    </g>
+                </svg>
+
+                <svg class="filter" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                    stroke: #ffffff;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 1.92px;
+                                }
+                            </style>
+                        </defs>
+                        <g id="roll_brush" data-name="roll brush">
+                            <rect class="cls-1" x="1.46" y="2.44" width="21.1" height="6.71"></rect>
+                            <rect class="cls-1" x="1.46" y="9.15" width="21.1" height="6.71"></rect>
+                            <rect class="cls-1" x="1.46" y="15.87" width="21.1" height="6.71"></rect>
+                            <line class="cls-1" x1="5.3" y1="4.36" x2="5.3" y2="6.28"></line>
+                            <line class="cls-1" x1="5.3" y1="17.78" x2="5.3" y2="19.7"></line>
+                            <line class="cls-1" x1="5.3" y1="11.07" x2="5.3" y2="12.99"></line>
+                            <line class="cls-1" x1="9.13" y1="4.36" x2="9.13" y2="6.28"></line>
+                            <line class="cls-1" x1="9.13" y1="17.78" x2="9.13" y2="19.7"></line>
+                            <line class="cls-1" x1="9.13" y1="11.07" x2="9.13" y2="12.99"></line>
+                            <line class="cls-1" x1="19.68" y1="5.32" x2="14.89" y2="5.32"></line>
+                            <line class="cls-1" x1="19.68" y1="12.03" x2="14.89" y2="12.03"></line>
+                            <line class="cls-1" x1="19.68" y1="18.74" x2="14.89" y2="18.74"></line>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <h1 style="color: #ffffff; font-size: 30px; text-align: center;" class="filter">Cadastre-se <br>
+                <p style="font-size: 20px;">O botão de cadastro estará disponível quando as senhas forem iguais.</p>
+            </h1>
+            <div class="icon_input">
+                <svg class="filter" width="45px" height="45px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M20 18L14 18M17 15V21M4 21C4 17.134 7.13401 14 11 14C11.695 14 12.3663 14.1013 13 14.2899M15 7C15 9.20914 13.2091 11 11 11C8.79086 11 7 9.20914 7 7C7 4.79086 8.79086 3 11 3C13.2091 3 15 4.79086 15 7Z"
+                            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </svg>
+                <input class="input" type="text" name="nome" placeholder="Nome de usuário" required>
+            </div>
+
+            <div class="icon_input">
+                <svg class="filter" width="40px" height="40px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12ZM16 12V13.5C16 14.8807 17.1193 16 18.5 16V16C19.8807 16 21 14.8807 21 13.5V12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21H16"
+                            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </svg>
+                <input class="" type="email" name="email" placeholder="email@gmail.com">
+            </div>
+
+            <div class="icon_input">
+                <svg class="filter" width="40px" height="40px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M21.0667 5C21.6586 5.95805 22 7.08604 22 8.29344C22 11.7692 19.1708 14.5869 15.6807 14.5869C15.0439 14.5869 13.5939 14.4405 12.8885 13.8551L12.0067 14.7333C11.272 15.465 11.8598 15.465 12.1537 16.0505C12.1537 16.0505 12.8885 17.075 12.1537 18.0995C11.7128 18.6849 10.4783 19.5045 9.06754 18.0995L8.77362 18.3922C8.77362 18.3922 9.65538 19.4167 8.92058 20.4412C8.4797 21.0267 7.30403 21.6121 6.27531 20.5876C6.22633 20.6364 5.952 20.9096 5.2466 21.6121C4.54119 22.3146 3.67905 21.9048 3.33616 21.6121L2.45441 20.7339C1.63143 19.9143 2.1115 19.0264 2.45441 18.6849L10.0963 11.0743C10.0963 11.0743 9.3615 9.90338 9.3615 8.29344C9.3615 4.81767 12.1907 2 15.6807 2C16.4995 2 17.282 2.15509 18 2.43738"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path
+                            d="M17.8851 8.29353C17.8851 9.50601 16.8982 10.4889 15.6807 10.4889C14.4633 10.4889 13.4763 9.50601 13.4763 8.29353C13.4763 7.08105 14.4633 6.09814 15.6807 6.09814C16.8982 6.09814 17.8851 7.08105 17.8851 8.29353Z"
+                            stroke="#ffffff" stroke-width="1.5"></path>
+                    </g>
+                </svg>
+                <input id="senha" class="input" type="password" name="senha" placeholder="Senha" required>
+            </div>
+            <div id="falha">
+                <p style="color: red;">Algo de errado nas senhas.</p>
+            </div>
+            <div class="icon_input">
+                <svg class="filter" width="40px" width="40px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"
+                    fill="#ffffff">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="invisible_box" data-name="invisible box">
+                                <rect width="48" height="48" fill="none"></rect>
+                            </g>
+                            <g id="Layer_7" data-name="Layer 7">
+                                <g>
+                                    <path
+                                        d="M39,18H35V13A11,11,0,0,0,24,2H22A11,11,0,0,0,11,13v5H7a2,2,0,0,0-2,2V44a2,2,0,0,0,2,2H39a2,2,0,0,0,2-2V20A2,2,0,0,0,39,18ZM15,13a7,7,0,0,1,7-7h2a7,7,0,0,1,7,7v5H15ZM37,42H9V22H37Z">
+                                    </path>
+                                    <circle cx="15" cy="32" r="3"></circle>
+                                    <circle cx="23" cy="32" r="3"></circle>
+                                    <circle cx="31" cy="32" r="3"></circle>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <input onblur="falha_senha()" id="confirmar" class="input" type="password" placeholder="Confirmar senha"
+                    required>
+            </div>
+
+            <button id="cadastrar_button" class="but_submit" type="submit">Cadastrar</button>
+        </form>
+    </nav>
+
+    <script src="cadastro.js"></script>
+    <script>
+        let falha = document.getElementById("falha");
+        falha.style.display = 'none';
+
+        let cadastrar = document.getElementById("cadastrar_button");
+        cadastrar.style.display = 'none';
+
+        function falha_senha() {
+            let senha = document.getElementById("senha").value;
+            let confirmar = document.getElementById("confirmar").value;
+
+            if (senha == confirmar) {
+                falha.style.display = 'none';
+                cadastrar.style.display = '';
+            } else {
+                falha.style.display = '';
+                cadastrar.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>

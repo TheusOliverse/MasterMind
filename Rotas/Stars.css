@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+
+body {
+    background-image: url(https://img.freepik.com/free-photo/view-starry-night-sky-with-nature-mountains-landscape_23-2151614815.jpg?semt=ais_hybrid&w=740);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.icone_inicio {
+    filter: drop-shadow(0 0 2px rgb(255, 255, 255));
+    width: 100px;
+    height: 100px;
+}
+
+.tit_ini {
+    text-align: center;
+    filter: drop-shadow(0 0 3px white);
+    color: rgb(255, 255, 255);
+}
+
+/*Main - Principal*/
+
+.img_main {
+    filter: drop-shadow(0 0 10px black);
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.lista_nome_img {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: aliceblue;
+}
+
+.ul_itens {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+}
+
+.tit_main {
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    color: white;
+    filter: drop-shadow(0 0 5px rgb(0, 0, 0));
+}
+
+.img_2 {
+    filter: drop-shadow(0 0 5px black);
+    border-radius: 20px;
+    width: 300px;
+}
+
+.img_texto {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.foto {
+    width: 100%;
+}
+
+nav {
+    backdrop-filter: blur(5px);
+    gap: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caixa_h2p{
+    width: 60%;
+}

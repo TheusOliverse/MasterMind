@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(https://c4.wallpaperflare.com/wallpaper/997/870/378/mountains-mist-dark-snowy-mountain-summit-hd-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    position: relative;
+    top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.icon_input{
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+input{
+    color: white;
+    transition: 0.5s;
+    font-size: 25px;
+    width: 100%;
+    border: none;
+    box-shadow: 0 0 10px black;
+    padding: 5px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(60, 227, 216, 0.527), rgba(0, 0, 0, 0));
+}
+input::placeholder{
+    transition: 0.5s;
+    color: rgba(255, 255, 255, 0.648);
+    border: none;
+}
+
+.formulario{
+    border-radius: 20px;
+    width: 50%;
+    height: 80%;
+    box-shadow: 0 0 15px black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.but_submit{
+    cursor: pointer;
+    padding: 5px;
+    font-size: 20px;
+    color: aliceblue;
+    border: none;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 255, 0, 0.309);
+    width: 50%;
+    display: flex;
+}
+
+.filter{
+    filter: drop-shadow(0 0 5px white);
+}
+
+.tam{
+    width: 100%;
+}

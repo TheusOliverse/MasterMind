@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url(https://wallpapercave.com/wp/wp8144363.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+.tit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(0deg, black, rgba(0, 0, 0, 0));
+}
+
+.text {
+    color: white;
+    filter: drop-shadow(0 0 5px white);
+}
+
+main {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column;
+    background: black;
+}
+
+.text_main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.p {
+    width: 60%;
+    margin: auto auto;
+    font-size: 20px;
+}
+
+.an {
+    animation: an 8s linear infinite;
+}
+
+@keyframes an {
+    0% {
+        color: rgb(255, 85, 85);
+    }
+
+    25% {
+        color: rgb(136, 255, 85);
+    }
+
+    50% {
+        color: rgb(255, 244, 85);
+    }
+
+    75% {
+        color: rgb(223, 62, 255);
+    }
+
+    100% {
+        color: rgb(255, 85, 85);
+    }
+}

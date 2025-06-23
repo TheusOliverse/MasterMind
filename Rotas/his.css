@@ -1,0 +1,323 @@
+* {
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(https://wallpapers.com/images/hd/dark-blue-gradient-8n8fnodhhr8few91.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+/*Caixa*/
+.caixa {
+    transition: 0.3s;
+    border: 2px solid rgba(255, 0, 0, 0);
+    border-radius: 20px;
+    padding: 10px;
+    width: 350px;
+    box-shadow: 0 0 20px black;
+    backdrop-filter: blur(5px);
+    margin: auto auto
+}
+
+.caixa:hover{
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.589);
+}
+
+.gradiennte_caixa_1 {
+    background: linear-gradient(0deg, rgba(255, 0, 0, 0.099), rgba(255, 0, 0, 0));
+}
+
+.gradiennte_caixa_2 {
+    background: linear-gradient(0deg, rgba(55, 0, 255, 0.096), rgba(255, 0, 0, 0));
+}
+
+.gradiennte_caixa_3 {
+    background: linear-gradient(0deg, rgba(0, 217, 255, 0.144), rgba(255, 0, 0, 0));
+}
+
+.icone_caixa {
+    width: 25px;
+    height: 25px;
+}
+
+.icone_texto_caixa {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    filter: drop-shadow(0 0 5px rgb(255, 255, 255));
+}
+
+.paragrafo_caixa {
+    font-size: 15px;
+}
+
+.img-h2-p {
+    gap: 5px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.imagem_caixa {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+.cor_branca_filtro_preto {
+    color: white;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.493));
+}
+
+.section_1 {
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+}
+
+/*Links e textos*/
+.link_1{
+    transition: 0.3s;
+    height: 100px;
+    text-decoration: none;
+    color: white;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0BNSOw9QtZXpLXOPIuFsXkNJcJ3FEDhRVg&s);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+.link_2{
+    transition: 0.3s;
+    text-decoration: none;
+    color: white;
+    background: url(https://img.freepik.com/fotos-gratis/cenas-de-guerra-crueis-pintura-digital_456031-162.jpg?semt=ais_hybrid&w=740);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+.link_3{
+    transition: 0.3s;
+    text-decoration: none;
+    color: white;
+    background: url(https://img.freepik.com/fotos-premium/uma-colecao-de-livros-antigos-sobre-uma-mesa-com-uma-caixa-de-fotos-antigas_670382-16604.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100px;
+}
+
+.link_1:hover{
+    transition: 0.3s;
+    color: rgb(146, 146, 146);
+}
+
+.link_2:hover{
+    transition: 0.3s;
+    color: rgb(151, 191, 224);
+}
+
+.link_3:hover{
+    transition: 0.3s;
+    color: rgb(133, 80, 0);
+}
+.logo {
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tit_select{
+    filter: drop-shadow(0 0 5px rgb(0, 0, 0));
+}
+
+.imagem_header{
+    width: 100%;
+    height: 100%;
+}
+
+.background{
+    background: url(https://wallpapercat.com/w/full/9/0/9/1326123-1920x1356-desktop-hd-clock-wallpaper-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.titulo_his{
+    backdrop-filter: blur(4px);
+    padding: 40px 0px;
+    background: linear-gradient(0deg, rgb(0, 0, 0), rgba(255, 0, 0, 0));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.texto_de_inicio{
+    padding: 20px;
+    color: aliceblue;
+    text-align: center;
+    width: 80%;
+    margin: auto auto;
+}
+
+.main_1{
+    backdrop-filter: blur(20px);
+}
+
+.gear{
+    animation: gear 2s linear infinite;
+}
+
+@keyframes gear{
+    0%{
+        rotate: 0deg;
+    }
+
+    100%{
+        rotate: 360deg;
+    }
+}
+
+/*penúltima caixa*/
+.link_4{
+    transition: 0.3s;
+    height: 250px;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    padding: 20px;
+    justify-content: center;
+}
+
+.img_1{
+    background-image: url(./fundo/diario.jpg);
+}
+
+.img_2{
+    background-image: url(./fundo/pirataria.jpg);
+}
+.img_3{
+    background-image: url(./fundo/toque.jpg);
+}
+.img_4{
+    background-image: url(./fundo/style.jpg);
+}
+.link_4:hover{
+transform: scaleY(105%);
+    transition: 0.3s;
+    color: rgb(255, 234, 0);
+}
+
+.div_imagens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    filter: drop-shadow(0 0 5px black);
+}
+
+.submundo{
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    transition: 0.3s;
+    padding: 20px;
+    width: 380px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-position: right;
+    background-image: url(./fundo/metrô.jpg);
+}
+
+.submundo_icone{
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    width: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 50px;
+    background: rgba(6, 56, 18, 0.527);
+    margin-top: -50px;
+}
+
+.section_2{
+    gap: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.link_sub{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.op_tit{
+    margin-top: 30px;
+    transition: 0.4s;
+    opacity: 0;
+    filter: drop-shadow(0 0 10px black);
+}
+
+.submundo:hover .op_tit{
+    margin-top: 0px;
+    transition: 0.4s;
+    opacity: 1;
+}
+
+.submundo:hover{
+    box-shadow: 0 0 5px white;
+    transition: 0.3s;
+    transform: scale(105%);
+}
+
+.main_1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    background: rgb(16, 12, 25);
+    padding: 20px;
+}
+
+.logo_hover{
+    filter: drop-shadow(0 0 5px black);
+}
